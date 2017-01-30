@@ -4,5 +4,5 @@ GitHub uses Markdown to format shared docuemtns. Please refer to [this](https://
 
 ## Tasks
 - [ ] Make clickable exit button function properly
-- [ ] Make <kbd>ESC</kbd> exit site safely
+- [x] Make <kbd>ESC</kbd> exit site safely
 - [ ] Make real carousel
