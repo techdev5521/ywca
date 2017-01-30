@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lafayette Aid</title>
+<script type="text/javascript">
+    window.onload = function() { // once everything on the page loads
+        document.getElementById("exit-button").onclick = function() { // make the exit button do something when it's clicked
+            // when the button is clicked...
+            // start the chain of redirects to hide your page in the browser history
+            window.location = "https://www.yoururl.com"; // redirects the current tab to another url
+            // go straight to the end of the chain in a new tab so there's no white screen
+            window.open("https://www.weather.com", "_blank"); // open this url in a new tab. _blank means new tab.
+        };
+    };
+</script>
+<style type="text/css">
+#page-container{
+	height: 1000px;
+	width: 100%;
+	}
+#informationall{
+	background-color:rgb(69,43,115);
+	width:100%;
+	height:auto;
+	}
+/*-----------------------------FONTS-----------------------------*/
+h1{
+	text-align:center;
+	color:#FFF;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+}
+p{
+	text-align:center;
+	color:#FFF;
+	padding-left: 30px;
+	padding-right:30px;
+	font-size: 14pt;
+	font-family: 'Lato', sans-serif;
+}
+p.bold{
+	text-align:center;
+	color:#FFF;
+	font-weight: 400;
+	font-size: 18pt;
+	margin-top: -20px;
+	font-family: 'Oswald', sans-serif;
+	}
+/*-----------------------------TOP MENU-----------------------------*/
+#top-bar{
+	background-color: rgb(69,43,115);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	margin-top: -50px;
+	box-shadow: 0 2px 2px -2px rgb(40,40,40);
+	}
+#top-logo{
+	width: 150px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	margin-top:10px;
+	}
+#menu{
+	height: 20px;
+	width: 600px;
+	margin-top: 15px;
+	margin-right: 10px;
+	float:right;
+	}
+a.tLinks{
+	font-family: 'Lato-Thin', sans-serif;
+	color:#FFF;
+	padding-right: 20px;
+	text-decoration: none;
+	font-size: 10pt;
+	text-transform:uppercase;
+}
+#logoMain{
+	margin-top:-5px;
+	}
+/*-----------------------------DEFINITION-----------------------------*/
+#definition{
+	background-color: #FFF;
+	width: 100%;
+	height: 250px;
+	margin-top: 50px;
+	}
+h1#definitionT{
+	color:rgb(69,43,115);
+	padding-top: 50px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 1000;
+}
+p#pdef{
+	text-align:center;
+	color:rgb(69,43,115);
+	padding-left: 30px;
+	padding-right:30px;
+	font-size: 14pt;
+	font-family: 'Lato', sans-serif;
+}
+/*-----------------------------RED FLAGS-----------------------------*/
+#redflags{
+	width: 100%;
+	height: 100px;
+	}
+/*-----------------------------OPTIONS-----------------------------*/
+#rf-content{
+	padding-top: 30px;
+}
+#rf-contentB{
+	margin-top:-10px;
+	font-family: 'Lato-Bold', sans-serif;
+	font-weight:bold;
+	color:rgba(255,255,255,.4);
+}
+#option-icon{
+	width: 100%;
+	height: 350px;
+	}
+#icon{
+	width: 920px;
+	height: 220px;
+	float:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
+}
+h1#optionT{
+	padding-top: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+a.iLinks{
+	padding-right: 50px;
+	padding-left: 50px;
+	width: 200px;
+	height:200px;
+}
+
+/*-----------------------------EMERGENCY-----------------------------*/
+#emergency-title{
+	width: 100%;
+	height: 50px;
+	}
+#emergency{
+	width: 100%;
+	height: 240px;
+	background-color: rgb(85,68,130);
+	}
+#emg-content{
+	padding-top: 20px;
+	}
+
+/*-----------------------------PLAN-----------------------------*/
+#plan-title{
+	width: 100%;
+	height: 50px;
+	padding-bottom: 20px;
+	}
+#plan{
+	width: 100%;
+	height: 250px;
+	background-color: rgb(85,68,130);
+	margin-left:auto;
+	margin-right:auto;
+	}
+.iconPlan{
+	padding-right: 50px;
+	margin-left: 30px;
+	margin-top: 30px;
+	}
+#steps{
+	width: 770px;
+	height: 220px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
+	}
+/*-----------------------------RESOURCE-----------------------------*/
+#resource-title{
+	width: 100%;
+	height: 50px;
+	padding-bottom: 20px;
+	}
+#resource{
+	width: 100%;
+	height: 250px;
+	background-color: rgb(85,68,130);
+	}
+#resourceBox{
+	width: 700px;
+	margin-left:auto;
+	margin-right: auto;
+	}
+/*-----------------------------BOTTOM-BAR-----------------------------*/
+
+#bottom-bar{
+	height: 100px;
+	width:100%;
+	background-color: #FFF;
+	}
+a.bLinks{
+	padding-top: 20px;
+	font-family: 'Lato', sans-serif;
+	color:rgb(69,43,115);
+	padding-right: 20px;
+	text-decoration: none;
+	font-size: 14pt;
+}
+#bMenu{
+	height: 20px;
+	width: 600px;
+	margin-top: 40px;
+	margin-left: 30px;
+	float:left;
+	}
+/*-----------------------------EXIT-----------------------------*/
+#exit-button{
+	height:80px;
+	width: 150px;
+    background-color: rgb(210,45,46);
+    position: fixed;
+    bottom: 0px;
+    overflow: visible;
+    z-index: 99;
+    padding-top: 5px;
+    padding-bottom: 3px;
+	margin-left: 80%;
+	}
+p.exit{
+	text-align:center;
+	color:#FFF;
+	font-weight: 400;
+	font-size: 14pt;
+	margin-right: -15px;
+	margin-left: 15px;
+	margin-top: -50px;
+	font-family: 'Oswald', sans-serif;
+	}
+p.exit-des{
+	text-align:center;
+	color:#FFF;
+	font-weight: 400;
+	font-size: 8pt;
+	margin-left: 15px;
+	margin-right: -15px;
+	margin-top: -20px;
+	font-family: 'Lato', sans-serif;
+	}
+#eDes{
+	width: 160px;
+	height:60px;
+	padding-right: -20px;
+	}
+</style>
+</head>
+<body>
+<div id="page-container">
+	<div id="top-bar"> 
+    	<div id="top-logo">
+        	<img id="logoMain" src="images/lwdv.png" height="50px">
+        </div>
+        <div id="menu">
+        	<a class="tLinks" href="website.html#definition"> Domestic Violence</a>
+            <a class="tLinks" href="website.html#emergency-title"> Emergency Options</a>
+            <a class="tLinks "href="website.html#plan-title">Planning</a>
+            <a class="tLinks" href="website.html#resource-title">Resources</a>
+        </div>
+    </div>
+    <div id="informationall">
+        <div id="definition">
+            <h1 id="definitionT"> WHAT IS DOMESTIC VIOLENCE?</h1>
+            <p id="pdef"> A one-time to pattern of violence whether being controlling or coercive tactics committed by one partner against another that consists of physical, psychological, verbal or sexual assaults mainly caused by abuser wanting power and control over the victim.</p>
+        </div>
+        <div id="redflags">
+            <p id="rf-content"> Consider the following characteristics as Red Flags that your relationship may be abusive <br/></p> 
+            <p id="rf-contentB"> CONTROLLING BEHAVIOR | ISOLATION | USE OF FORCE | BLAME | HYPERSENSITIVITY | DISRESPECT</p>
+        </div>
+        <div id="option-icon">
+            <h1 id="optionT">IF YOU THINK YOU ARE IN AN ABUSIVE RELATIONSHIP<BR/> HERE ARE SOME WAYS TO TAKE ACTION</h1>
+            <div id="icon">
+                <a class="iLinks" href="website.html#emergency-title"><img src="images/options-01.png" onMouseover="this.src='images/options-02.png'" onMouseout="this.src='images/options-01.png'" width="200px"height="200px"></a>
+                <a class="iLinks" href="website.html#plan-title"><img src="images/options-03.png" onMouseover="this.src='images/options-04.png'" onMouseout="this.src='images/options-03.png'" width="200px"height="200px"></a>
+                <a class="iLinks" href="website.html#resource-title"><img src="images/options-05.png" onMouseover="this.src='images/options-06.png'" onMouseout="this.src='images/options-05.png'" width="200px"height="200px"></a>
+            </div>
+        </div>
+            <div id="emergency-title">
+            	<h1 id="emgT"> EMERGENCY</h1>
+            </div>
+            <div id="emergency">
+            	<p id="emg-content"> <br/>If you are in a Life Threatening situation</p>
+                <p class="bold"> CALL 911</p>
+                <p id="emg-content">For instant online conversation with a specialist visit</p>
+                <p class="bold">The National Domestic Violence Hotline</p> 
+            </div>
+            <div id="plan-title">
+            	<h1 id="planT"> PLAN </h1>
+            </div>
+            <div id="plan">
+            	<div id="steps">
+                	<img class="iconPlan" src="images/icons-11.png" width="200px">
+            		<img class="iconPlan" style="margin-left: -100px;" src="images/icons-12.png" width="200px">
+                    <img class="iconPlan" style="margin-left: -100px;"src="images/icons-13.png"  width="200px">
+                    <img class="iconPlan" style="margin-left: -100px;"src="images/icons-14.png"  width="200px">
+                </div>
+            </div>
+            <div id="resource-title">
+            	<h1 id="resourceT"> LOCAL RESOURCES </h1>
+            </div>
+       	<div id="resource">
+        	<div id="resourceBox">
+          		<img src="images/carousel-02.png" width="700px">  
+            </div>
+    	</div>
+        <div id="bottom-bar">
+        	<div id="bMenu">
+        	<a class="bLinks" href="google.com"> Outside Source</a>
+            <a class="bLinks" href="google.com"> Social Media</a>
+            <a class="bLinks "href="google.com">Outside Source</a>
+            <a class="bLinks" href="google.com">Sponsor</a>
+            </div>
+        </div>
+        <div id="exit-button">
+        	<img id="X" src="images/x.png" width="50px">
+            <div id="eDes">
+                <p class="exit"> EXIT BUTTON </p>
+                <p class="exit-des"> Click here to safely exit the site if you feel you are in danger.</p>
+           	</div>
+        </div>
+	</div>
+</div>
+</body>
+</html>
