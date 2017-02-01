@@ -10,10 +10,16 @@
         document.getElementById("exit-button").onclick = function() { // make the exit button do something when it's clicked
             // when the button is clicked...
             // start the chain of redirects to hide your page in the browser history
-            window.location = "https://www.yoururl.com"; // redirects the current tab to another url
+            window.location = "https://www.google.com"; // redirects the current tab to another url
             // go straight to the end of the chain in a new tab so there's no white screen
             window.open("https://www.weather.com", "_blank"); // open this url in a new tab. _blank means new tab.
         };
+    };
+    document.onkeydown = function(event) { // when any key is pressed
+        if (event.keyCode == 27) { // if that key is ESC (Unicode key code for ESC is 27)
+            window.location = "https://www.google.com"; // Do the same redirect as above.
+            window.open("https://www.weather.com", "_blank");
+        }
     };
 </script>
 <style type="text/css">
@@ -262,12 +268,12 @@ p.exit-des{
 </head>
 <body>
 <div id="page-container">
-	<div id="top-bar"> 
-    	<div id="top-logo">
-        	<img id="logoMain" src="images/lwdv.png" height="50px">
+    <div id="top-bar"> 
+        <div id="top-logo">
+       	    <img id="logoMain" src="images/lwdv.png" height="50px">
         </div>
         <div id="menu">
-        	<a class="tLinks" href="website.html#definition"> Domestic Violence</a>
+            <a class="tLinks" href="website.html#definition"> Domestic Violence</a>
             <a class="tLinks" href="website.html#emergency-title"> Emergency Options</a>
             <a class="tLinks "href="website.html#plan-title">Planning</a>
             <a class="tLinks" href="website.html#resource-title">Resources</a>
@@ -290,50 +296,50 @@ p.exit-des{
                 <a class="iLinks" href="website.html#resource-title"><img src="images/options-05.png" onMouseover="this.src='images/options-06.png'" onMouseout="this.src='images/options-05.png'" width="200px"height="200px"></a>
             </div>
         </div>
-            <div id="emergency-title">
-            	<h1 id="emgT"> EMERGENCY</h1>
+        <div id="emergency-title">
+            <h1 id="emgT"> EMERGENCY</h1>
+        </div>
+        <div id="emergency">
+       	    <p id="emg-content"> <br/>If you are in a Life Threatening situation</p>
+            <p class="bold"> CALL 911</p>
+            <p id="emg-content">For instant online conversation with a specialist visit</p>
+            <p class="bold">The National Domestic Violence Hotline</p> 
+        </div>
+        <div id="plan-title">
+       	    <h1 id="planT"> PLAN </h1>
+        </div>
+        <div id="plan">
+       	    <div id="steps">
+                <img class="iconPlan" src="images/icons-11.png" width="200px">
+                <img class="iconPlan" style="margin-left: -100px;" src="images/icons-12.png" width="200px">
+                <img class="iconPlan" style="margin-left: -100px;"src="images/icons-13.png"  width="200px">
+                <img class="iconPlan" style="margin-left: -100px;"src="images/icons-14.png"  width="200px">
             </div>
-            <div id="emergency">
-            	<p id="emg-content"> <br/>If you are in a Life Threatening situation</p>
-                <p class="bold"> CALL 911</p>
-                <p id="emg-content">For instant online conversation with a specialist visit</p>
-                <p class="bold">The National Domestic Violence Hotline</p> 
+        </div>
+        <div id="resource-title">
+            <h1 id="resourceT"> LOCAL RESOURCES </h1>
+        </div>
+        <div id="resource">
+            <div id="resourceBox">
+                <img src="images/carousel-02.png" width="700px">  
             </div>
-            <div id="plan-title">
-            	<h1 id="planT"> PLAN </h1>
-            </div>
-            <div id="plan">
-            	<div id="steps">
-                	<img class="iconPlan" src="images/icons-11.png" width="200px">
-            		<img class="iconPlan" style="margin-left: -100px;" src="images/icons-12.png" width="200px">
-                    <img class="iconPlan" style="margin-left: -100px;"src="images/icons-13.png"  width="200px">
-                    <img class="iconPlan" style="margin-left: -100px;"src="images/icons-14.png"  width="200px">
-                </div>
-            </div>
-            <div id="resource-title">
-            	<h1 id="resourceT"> LOCAL RESOURCES </h1>
-            </div>
-       	<div id="resource">
-        	<div id="resourceBox">
-          		<img src="images/carousel-02.png" width="700px">  
-            </div>
-    	</div>
+        </div>
         <div id="bottom-bar">
-        	<div id="bMenu">
-        	<a class="bLinks" href="google.com"> Outside Source</a>
-            <a class="bLinks" href="google.com"> Social Media</a>
-            <a class="bLinks "href="google.com">Outside Source</a>
-            <a class="bLinks" href="google.com">Sponsor</a>
+            <div id="bMenu">
+                <a class="bLinks" href="google.com"> Outside Source</a>
+                <a class="bLinks" href="google.com"> Social Media</a>
+                <a class="bLinks "href="google.com">Outside Source</a>
+                <a class="bLinks" href="google.com">Sponsor</a>
             </div>
         </div>
         <div id="exit-button">
-        	<img id="X" src="images/x.png" width="50px">
+            <img id="X" src="images/x.png" width="50px">
             <div id="eDes">
                 <p class="exit"> EXIT BUTTON </p>
                 <p class="exit-des"> Click here to safely exit the site if you feel you are in danger.</p>
-           	</div>
+            </div>
         </div>
-	</div>
+    </div>
 </div>
 </body>
 </html>
