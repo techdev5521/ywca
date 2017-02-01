@@ -7,5 +7,7 @@ GitHub uses Markdown to format shared docuemtns. Please refer to [this](https://
 - [ ] Make <kbd>ESC</kbd> exit site safely
 - [ ] Implement real carousel
 
+**
+
 ## Long-term Ideas
 - [ ] Make page responsive and readable on variety of screen sizes, including mobile.
