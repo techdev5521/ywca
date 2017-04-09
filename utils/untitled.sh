@@ -9,7 +9,10 @@
 ##########
 
 # Make temp folder to download into
-mkdir /var/www/html/ywca/update
+if [ -d /var/www/html/ywca/update]
+	then
+		mkdir /var/www/html/ywca/update
+fi
 
 # Switch to newly made directory
 cd /var/www/html/ywca/update/
