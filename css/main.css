@@ -1,1 +1,21 @@
 /* This document is for all of the CSS edits that are not in Boostrap */
+
+h1 {
+	color: #F15B25;
+
+	font-family: 'Oswald', sans-seif;
+	font-size: 5em;
+	text-align: center;
+}
+
+h2 {
+	color: #414042;
+
+	font-family: 'Lato', sans-seif;
+	font-size: 2em;
+	text-align: center;
+}
+
+hr {
+	border-top: .2em solid #dedede;
+}
