@@ -1,14 +1,14 @@
 /* This document is for all of the CSS edits that are not in Boostrap */
 
-h1 {
+h1 { /* For entire webpage */
 	color: #F15B25;
 
-	font-family: 'Oswald', sans-seif;
+	font-family: 'Roboto', sans-seif;
 	font-size: 5em;
 	text-align: center;
 }
 
-h2 {
+h2 { /* For entire document */
 	color: #414042;
 
 	font-family: 'Lato', sans-seif;
@@ -16,6 +16,70 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	color: #ffffff;
+
+	font-family: 'Lato', sans-seif;
+	text-align: center;
+}
+
 hr {
 	border-top: .2em solid #dedede;
 }
+
+.resource {
+	background-color: #5B4C9F;
+
+	margin-top: 2.8125em;
+}
+
+.resource-icon {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.8125em;
+	max-height: 3.4375em;
+	max-width: 3.4375em;
+}
+
+.resource-info {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.2em;
+}
+
+.resource-info img {
+	margin-right: .5em;
+	max-height: 1.33em;
+	max-width: 1.33em;
+}
+
+.resource-info p {
+	color: #ffffff;
+
+	font-family: 'Lato', sans-seif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.resource-info p a {
+	color: #ffffff;
+}
+
+.borderless tbody tr td,
+.borderless tbody tr td tr,
+.table-responsive { /* Applies to <table> elements to remove borders */
+	border: none;
+}
+
+.btn-outline {
+	background-color: transparent;
+	border: .05em solid #ffffff;
+}
+
+.btn-outline:hover{
+	border: 0.2em solid #ffffff;
+	color: #ffffff;
+
+	font-weight: bold;
+}
+
