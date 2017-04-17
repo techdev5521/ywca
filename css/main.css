@@ -27,10 +27,20 @@ hr {
 	border-top: .2em solid #dedede;
 }
 
+#resources{
+	margin-top: 2.8125em;
+}
+
 .resource {
 	background-color: #5B4C9F;
+}
 
-	margin-top: 2.8125em;
+.resource p {
+	color: #ffffff;
+
+	font-family: 'Lato', sans-seif;
+	font-weight: 300;
+	text-align: center;
 }
 
 .resource-icon {
@@ -39,6 +49,17 @@ hr {
 	margin-top: 2.8125em;
 	max-height: 3.4375em;
 	max-width: 3.4375em;
+}
+
+.resource-tags {
+	margin-top: 1.2em;
+}
+
+.resource-tags img {
+	margin-left: .8em;
+	margin-right: .5em;
+	max-height: .75em;
+	max-width: .75em;
 }
 
 .resource-info {
@@ -51,14 +72,6 @@ hr {
 	margin-right: .5em;
 	max-height: 1.33em;
 	max-width: 1.33em;
-}
-
-.resource-info p {
-	color: #ffffff;
-
-	font-family: 'Lato', sans-seif;
-	font-weight: 300;
-	text-align: center;
 }
 
 .resource-info p a {
@@ -77,18 +90,20 @@ hr {
 }
 
 .btn-outline:hover{
-	border: 0.2em solid #ffffff;
+	border: 0.1em solid #ffffff;
 	color: #ffffff;
 
 	font-weight: bold;
 }
-.what-you-need-title p:{
+
+.what-you-need-title p {
 	color: #5B4C9F;
 	font-family: 'Lato', sans-seif;
 	font-weight: 300;
     text-align:center;
 }
-.what-you-do-title p:{
+
+.what-you-do-title p {
 	color: #5B4C9F;
 	font-family: 'Lato', sans-seif;
 	font-weight: 300;
