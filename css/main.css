@@ -12,7 +12,7 @@ h2 { /* For entire document */
 	color: #414042;
 
 	font-family: 'Lato', sans-seif;
-	font-size: 2em;
+	font-size: 1.33em;
 	text-align: center;
 }
 
@@ -82,4 +82,15 @@ hr {
 
 	font-weight: bold;
 }
-
+.what-you-need-title p:{
+	color: #5B4C9F;
+	font-family: 'Lato', sans-seif;
+	font-weight: 300;
+    text-align:center;
+}
+.what-you-do-title p:{
+	color: #5B4C9F;
+	font-family: 'Lato', sans-seif;
+	font-weight: 300;
+    text-align:center;
+}
