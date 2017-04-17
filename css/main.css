@@ -13,7 +13,11 @@ h2 { /* For entire document */
 
  font-family: 'Lato', sans-seif;
  font-size: 1.33em;
- text-align: center;
+ text-align: left;
+    line-height: 1.3333em;
+    margin-top: 2em;
+    margin-left:7em;
+    margin-right:7em;
 }
 
 h3 {
@@ -124,10 +128,12 @@ hr {
 }
 
 .what-you-do{
-    margin-left: auto;
+    margin-top:1em;
+    margin-left: 5em;
     margin-right: 5em;
+    padding-bottom: 5em;
 }
-
+ 
 .action-icon {
     margin-left: auto;
     margin-right: auto;
