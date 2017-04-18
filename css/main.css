@@ -1,30 +1,32 @@
 /* This document is for all of the CSS edits that are not in Boostrap */
+h1 {
 
-h1 { /* For entire webpage */
-	color: #F15B25;
-
-	font-family: 'Roboto', sans-seif;
-	font-size: 5em;
-	text-align: center;
+    /* For entire webpage */
+    color: #F15B25;
+    font-family: 'Roboto', sans-seif;
+    font-size: 5em;
+    text-align: center;
 }
+h2 {
 
-h2 { /* For entire document */
-	color: #414042;
-
-	font-family: 'Lato', sans-seif;
-	font-size: 2em;
-	text-align: center;
+    /* For entire document */
+    color: #414042;
+    font-family: 'Lato', sans-seif;
+    font-size: 1.33em;
+    text-align: left;
+    line-height: 1.3333em;
+    c
+    margin-top: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
 }
-
 h3 {
-	color: #ffffff;
-
-	font-family: 'Lato', sans-seif;
-	text-align: center;
+    color: #ffffff;
+    font-family: 'Lato', sans-seif;
+    text-align: center;
 }
-
 hr {
-	border-top: .2em solid #dedede;
+    border-top: .2em solid #dedede;
 }
 
 .navbar-custom {
@@ -185,61 +187,105 @@ hr {
 	height:65px;
 }
 
-
-
-
-.resource {
-	background-color: #5B4C9F;
-
-	margin-top: 2.8125em;
+.resource-purple {
+    background-color: #5B4C9F;
+    color: #ffffff;
+    font-family: 'Lato', sans-seif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2.8125em;
 }
+.resource-grey {
+    background-color: #999998;
+    color: #ffffff;
+    font-family: 'Lato', sans-seif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2.8125em;
 
+}
 .resource-icon {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2.8125em;
-	max-height: 3.4375em;
-	max-width: 3.4375em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.8125em;
+    height: 3.4375em;
+    width: 3.4375em;
 }
-
+.resource-tags {
+    margin-top: 1.2em;
+}
+.resource-tags img {
+    margin-left: .8em;
+    margin-right: .5em;
+    max-height: .75em;
+    max-width: .75em;
+}
 .resource-info {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
 }
-
 .resource-info img {
-	margin-right: .5em;
-	max-height: 1.33em;
-	max-width: 1.33em;
+    margin-right: .5em;
+    max-height: 1.33em;
+    max-width: 1.33em;
 }
-
-.resource-info p {
-	color: #ffffff;
-
-	font-family: 'Lato', sans-seif;
-	font-weight: 300;
-	text-align: center;
-}
-
 .resource-info p a {
-	color: #ffffff;
+    color: #ffffff;
 }
+.borderless tbody tr td, .borderless tbody tr td tr, .table-responsive {
 
-.borderless tbody tr td,
-.borderless tbody tr td tr,
-.table-responsive { /* Applies to <table> elements to remove borders */
-	border: none;
+    /* Applies to <table> elements to remove borders */
+    border: none;
 }
-
 .btn-outline {
-	background-color: transparent;
-	border: .05em solid #ffffff;
+    background-color: transparent;
+    border: .05em solid #ffffff;
+    white-space: normal;
 }
-
-.btn-outline:hover{
-	border: 0.2em solid #ffffff;
-	color: #ffffff;
-
-	font-weight: bold;
+.btn-outline:hover {
+    border: 0.1em solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+}
+.what-you-need-title p {
+    margin-top: 1.3333em;
+    margin-bottom: 1.3333em;
+    color: #5B4C9F;
+    font-size: 1.6667em;
+    font-family: 'Lato', sans-seif;
+    font-weight: 300;
+    text-align: center;
+}
+.what-you-do-title p {
+    margin-top: 1.3333em;
+    margin-bottom: 1.3333em;
+    color: #5B4C9F;
+    font-size: 1.6667em;
+    font-family: 'Lato', sans-seif;
+    font-weight: 300;
+    text-align: center;
+}
+.what-you-need p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.what-you-need-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.8125em;
+    margin-bottom: 1.8125em;
+    height: 2.6667em;
+    width: 2.6667em;
+}
+.what-you-do {
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-bottom: 5em;
+}
+ul li {
+    padding: 0.33em;
 }
