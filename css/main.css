@@ -127,20 +127,21 @@ hr {
     text-align: center;
 }
 
-.what-you-do{
-    margin-top:1em;
-    margin-left: 5em;
-    margin-right: 5em;
-    padding-bottom: 5em;
-}
- 
-.action-icon {
+.what-you-need-icon {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.8125em;
     margin-bottom: 1.8125em;
     height: 2.6667em;
     width: 2.6667em;
+}
+
+.what-you-do{
+    margin-top:1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-bottom: 5em;
 }
 
 ul li{
