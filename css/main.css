@@ -27,6 +27,167 @@ hr {
 	border-top: .2em solid #dedede;
 }
 
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 0px solid rgba(255,255,255,.3);
+    font-family: Montserrat,"Lato",Helvetica,Arial,sans-serif;
+    background-color: white;
+}
+
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 21px !important;
+    color: white;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #414042;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+		color: white;
+		background-color: #414042 !important;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+
+
+.intro {
+    display: table;
+    width: 100%;
+		height: 800px;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../images/lafayette.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+		font-weight: 300;
+		font-family: Montserrat,"Lato",Helvetica,Arial,sans-serif;
+}
+
+.intro-option {
+	margin-top: 40px;
+}
+
+.intro-option img {
+	max-width: 50px;
+	margin-top: -25px;
+	margin-left: -25px;
+	position: absolute;
+}
+
+
+.intro-fieldset {
+  padding:32px;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+	height: 230pt;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.emergency{
+	clear: both;
+	width: 100%;
+	float: left;
+	position: static;
+	background-color: #F15B25;
+	height:65px;
+}
+
+
+
+
 .resource {
 	background-color: #5B4C9F;
 
@@ -82,4 +243,3 @@ hr {
 
 	font-weight: bold;
 }
-
