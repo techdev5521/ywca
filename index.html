@@ -15,6 +15,24 @@
 		<!-- JavaScript -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Add smooth scrolling to all links -->
+		<script>
+			$(document).ready(function(){
+  			$("a").on('click', function(event) {
+    			if (this.hash !== "") {
+      			event.preventDefault();
+      			var hash = this.hash;
+      			$('html, body').animate({
+        			scrollTop: $(hash).offset().top
+      			}, 800, function(){
+        		window.location.hash = hash;
+      		});
+    		} // End if
+  		});
+		});
+
+</script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -24,16 +42,14 @@
 	</head>
 	<body>
 		<!-- Navigation (Watson) -->
-		<div class="nav">
-
-				<!-- Navigation -->
+		<div class="nav" id="headline">
 		    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		        <div class="container">
 		            <div class="navbar-header">
 		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 		                    <i class="fa fa-bars"></i>
 		                </button>
-		                <a class="navbar-brand page-scroll" href="#page-top">
+		                <a class="navbar-brand" href="#headline">
 		                  <span class="light">LWDV</span>
 		                </a>
 		            </div>
@@ -41,13 +57,13 @@
 		            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 		                <ul class="nav navbar-nav">
 		                    <li>
-		                        <a href="#about">About Domestic Violence</a>
+		                        <a href="#headline1">About Domestic Violence</a>
 		                    </li>
 		                    <li>
-		                        <a href="#download">Take Action</a>
+		                        <a href="#headline2">Take Action</a>
 		                    </li>
 		                    <li>
-		                        <a href="#local-resourc">Local Resources</a>
+		                        <a href="#headline3">Local Resources</a>
 		                    </li>
 												<li>
 													<a href="weather.com" style="background-color: #328741;"><font color="white">Exit Website > </font></a>
@@ -74,14 +90,30 @@
 												<div class="intro-option">
 													<img src="images/intro-heart.svg" alt="Heart">
 													<div class = "intro-fieldset" style="background-color: rgba(255, 255, 255, 0.4);">
-														<p class="intro-text">Here are some ways to get help!</p>
+														<p class="intro-text">Here are some ways to get help</p>
 
-														<div class="intro-">
-
-
-															<a href="index.html#local-resources" class="fa fa-arrow-circle-down">
-																<i class="fa fa-angle-double-down animated"></i>
-															</a>
+														<div class="intro-option-button">
+															<div class ="col-md-4" >
+																		<div class="row">
+																			<p>About </br>Domestic Violence</p>
+																		</div>
+																	<a href="#headline1" class="fa fa-chevron-circle-down">
+																	</a>
+															</div>
+															<div class ="col-md-4">
+																		<div class="row">
+																			<p>Take <br/> Action</p>
+																		</div>
+																	<a href="#headline2" class="fa fa-chevron-circle-down">
+																	</a>
+															</div>
+															<div class ="col-md-4">
+																	<div class="row">
+																		<p>Local <br/> Resources</p>
+																	</div>
+																<a href="#headline3" class="fa fa-chevron-circle-down">
+																</a>
+															</div>
 														</div>
 
 													</div>
@@ -95,7 +127,7 @@
 		<div class="emergency">
 			<div class="container">
 				<p style="text-align: center; line-height: 65px;">
-					<span style="color: #ffffff;">If you are in emergency, Call <a href="tel:911;" text-decoration="underline;" style="color: #ffffff;">911</a> imediately. </span>
+					<span style="color: #ffffff;">If you are in emergency, Call <a href="tel:911;" style="color: #ffffff;"><u>911</u></a> imediately. </span>
 				</p>
 			</div>
 		</div>
@@ -106,9 +138,8 @@
 			</div>
 		</div>
 		<!-- Take Action (Si) -->
-
 		<div class="container">
-			<div class="action">
+			<div class="action" id="headline2">
 				<div class="title">
 					<div class="row">
 						<div class="col-md-12">
@@ -210,8 +241,10 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Local Resources (Justin) -->
-		<div class="local-resources">
+
+		<div class="local-resources" id="headline3">
 			<div class="container">
 
 				<div class="title">

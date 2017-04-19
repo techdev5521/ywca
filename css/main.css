@@ -35,6 +35,7 @@ hr {
     font-family: Montserrat,"Lato",Helvetica,Arial,sans-serif;
     background-color: white;
     border-bottom: 1px solid #414042;
+    height: 56px;
 }
 
 
@@ -92,7 +93,7 @@ hr {
 .intro {
     display: table;
     width: 100%;
-		height: 800px;
+		height: 900px;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -110,13 +111,14 @@ hr {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 52px;
+    font-weight: 500;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 20px;
 		font-weight: 300;
-		font-family: Montserrat,"Lato",Helvetica,Arial,sans-serif;
+    font-family: 'Lato', sans-seif;
 }
 
 .intro-option {
@@ -130,14 +132,47 @@ hr {
 	position: absolute;
 }
 
-
 .intro-fieldset {
   padding:32px;
   -moz-border-radius:8px;
   -webkit-border-radius:8px;
   border-radius:8px;
-	height: 230pt;
+	min-height: 250pt;
 }
+
+ .intro-option p{
+   margin: 10px 0 10px;
+ }
+
+@media screen and (min-width: 991px) {
+  .intro-option-button{
+    display: flex;
+    align-items: flex-end;;
+  }
+}
+.intro-vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+.intro-option-button a{
+  font-size:48px;
+  color: #5B4C9F;
+  text-decoration: none;
+}
+
+.intro-option-button p {
+    margin-top: 1.3333em;
+    margin-bottom: 1.3333em;
+    color: white;
+    font-size: 1.6667em;
+    font-family: 'Lato', sans-seif;
+    font-weight:300;
+    text-align: center;
+}
+
 
 .btn-circle {
     width: 70px;
