@@ -47,6 +47,7 @@ hr {
     padding: 4px 6px;
     font-size: 21px !important;
     color: white;
+    background-color: white;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -62,6 +63,7 @@ hr {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    background-color: white; 
 }
 
 .navbar-custom .nav li a:hover {
@@ -87,6 +89,7 @@ hr {
 .navbar-custom .nav li.active a:hover {
     color: #fff;
 }
+
 
 
 
