@@ -4,8 +4,8 @@ h1 {
     /* For entire webpage */
     padding-top: .5em;
     color: #F15B25;
-    font-family: 'Roboto', sans-seif;
-    font-size: 5em;
+    font-family: 'Copse', serif;
+    font-size: 4em;
     text-align: center;
 }
 h2 {
@@ -15,8 +15,8 @@ h2 {
     font-family: 'Lato', sans-seif;
     font-size: 1.33em;
     text-align: left;
-    line-height: 1.3333em;
-    margin-top: 2em;
+    line-height: 1.33333em;
+    margin-top: 1.5em;
 }
 h3 {
     color: #ffffff;
@@ -129,10 +129,17 @@ hr {
     vertical-align: middle;
     float: none;
 }
+/*
 .intro-option-button a {
-    font-size: 48px;
+    font-size: 56px;
     color: #5B4C9F;
     text-decoration: none;
+}
+*/
+.fa-chevron-circle-down {
+	font-size: 56px !important;
+	color: #5B4C9F;
+	text-decoration: none;
 }
 .intro-option-button p {
     margin-top: 1.3333em;
@@ -140,7 +147,7 @@ hr {
     color: white;
     font-size: 1.6667em;
     font-family: 'Lato', sans-seif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 .btn-circle {
@@ -185,6 +192,8 @@ hr {
     position: static;
     background-color: #F15B25;
     height: 65px;
+	font-size: 1.33em;
+	margin-bottom: 20px;
 }
 .resource-purple {
     background-color: #5B4C9F;
@@ -244,22 +253,13 @@ hr {
     color: #ffffff;
     font-weight: bold;
 }
-.what-you-need-title p {
+.what-you-need-title p, .what-you-do-title p {
     margin-top: 1.3333em;
     margin-bottom: 1.3333em;
     color: #5B4C9F;
     font-size: 1.6667em;
     font-family: 'Lato', sans-seif;
-    font-weight: 300;
-    text-align: center;
-}
-.what-you-do-title p {
-    margin-top: 1.3333em;
-    margin-bottom: 1.3333em;
-    color: #5B4C9F;
-    font-size: 1.6667em;
-    font-family: 'Lato', sans-seif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 .what-you-need p {
@@ -284,4 +284,29 @@ hr {
 }
 ul li {
     padding: 0.33em;
+}
+@media (min-width: 800px) {
+	.col-md-12 h2, .col-md-12 p {
+		width: 66%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.map-container {
+	position: relative;
+	height: 800px;
+}
+
+.map-container img {
+	width: 100%;
+	max-width: 700px;
+	position: absolute;
+	top:0;
+	left:50%;
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.map-container .mapover {
+	z-index: 2;
 }
