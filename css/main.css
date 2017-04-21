@@ -12,7 +12,7 @@ h2 {
 
     /* For entire document */
     color: #414042;
-    font-family: 'Lato', sans-seif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.33em;
     text-align: left;
     line-height: 1.33333em;
@@ -20,7 +20,7 @@ h2 {
 }
 h3 {
     color: #ffffff;
-    font-family: 'Lato', sans-seif;
+    font-family: 'Copse', serif;
     text-align: center;
 }
 hr {
@@ -45,9 +45,16 @@ hr {
 .navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
 }
-.navbar-custom a {
+.navbar-collapse a {
     color: #414042;
 }
+.navbar-brand {
+	color: #5B4C9F;
+    font-family: 'Copse', serif;
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -96,7 +103,7 @@ hr {
 }
 .intro .intro-body .intro-text {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Lato', sans-seif;
 }
 .intro-option {
@@ -138,8 +145,9 @@ hr {
 */
 .fa-chevron-circle-down {
 	font-size: 56px !important;
-	color: #5B4C9F;
+	color: /*#866cff;*/ #5B4C9F;
 	text-decoration: none;
+	text-shadow: 0px 0px 12px #FFF;
 }
 .intro-option-button p {
     margin-top: 1.3333em;
@@ -149,6 +157,9 @@ hr {
     font-family: 'Lato', sans-seif;
     font-weight: 400;
     text-align: center;
+}
+.intro-option-button a:hover {
+	text-decoration: none;
 }
 .btn-circle {
     width: 70px;
@@ -246,12 +257,13 @@ hr {
 .btn-outline {
     background-color: transparent;
     border: .05em solid #ffffff;
+	font-weight: 400;
     white-space: normal;
 }
 .btn-outline:hover {
     border: 0.1em solid #ffffff;
+	background-color: rgba(255,255,255,0.2);
     color: #ffffff;
-    font-weight: bold;
 }
 .what-you-need-title p, .what-you-do-title p {
     margin-top: 1.3333em;
@@ -285,23 +297,16 @@ hr {
 ul li {
     padding: 0.33em;
 }
-@media (min-width: 800px) {
-	.col-md-12 h2, .col-md-12 p {
-		width: 66%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
 .map-container {
 	position: relative;
-	height: 800px;
+	width: 100%;
+	padding-bottom: 105%; /* CSS hack for a height that maintains aspect ratio. Would be 100%, but the extra 5% is for bottom padding. */
 }
 
 .map-container img {
 	width: 100%;
 	max-width: 700px;
 	position: absolute;
-	top:0;
 	left:50%;
 	-ms-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -309,4 +314,18 @@ ul li {
 }
 .map-container .mapover {
 	z-index: 2;
+}
+.what-you-do b {
+	color: #F15B25;
+}
+/* decreses line width at large browser sizes */
+@media (min-width: 775px) {
+	.col-md-12 h2, .col-md-12 p {
+		width: 66%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.map-container {
+		height: 750px;
+		padding: 0;
 }
