@@ -31,7 +31,21 @@
 		});
 		} // End if
 		});
+		/* quickly spliced in Exit code */
 		});
+		
+		
+		function quickescape() {
+			location.replace("https://www.weather.com");
+			return false; /* prevents href from triggering */
+		}
+		
+		document.onkeydown = function(event) { // when any key is pressed
+			if (event.keyCode == 27) { // if that key is ESC (Unicode key code for ESC is 27)
+				location.replace("https://www.weather.com");
+			}
+		};
+		
 		</script>
 		<script>
 		function mapAnchorChange()
@@ -129,8 +143,8 @@
 							<li>
 								<a href="#headline3">Local Resources</a>
 							</li>
-							<li>
-								<a href="weather.com" style="background-color: #328741;"><font color="white">Exit Website > </font></a>
+							<li id="escape">
+								<a href="" style="background-color: #328741;" onClick="return quickescape();"><font color="white">Exit Website > </font></a>
 							</li>
 						</ul>
 					</div>
