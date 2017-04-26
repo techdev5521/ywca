@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Lafayette Without Domestic Violence</title>
+		<title>redirecting...</title>
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> <!-- Baestrap -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet"> <!-- Lato Font -->
@@ -20,6 +20,7 @@
 		<!-- Add smooth scrolling to all links -->
 		<script>
 			$(document).ready(function(){
+			document.title = "Lafayette Without Domestic Violence";
 			$("a").on('click', function(event) {
 			if ((this.hash !== "") && (this.hash !== "#mainmap")) { // The imagemap uses hashes to operate, one needed to be exempted to prevent unwanted animation
 			event.preventDefault();
@@ -34,16 +35,15 @@
 		/* quickly spliced in Exit code */
 		});
 		
-		
 		function quickescape() {
-			history.replaceState(stateObj, "page 2", "https://www.weather.com");
+			history.replaceState({}, "page 2", "https://www.weather.com");
 			location.replace("https://www.weather.com");
 			return false; /* prevents href from triggering */
 		}
 		
 		document.onkeydown = function(event) { // when any key is pressed
 			if (event.keyCode == 27) { // if that key is ESC (Unicode key code for ESC is 27)
-				history.replaceState(stateObj, "page 2", "https://www.weather.com");
+				history.replaceState({}, "page 2", "https://www.weather.com");
 				location.replace("https://www.weather.com");
 			}
 		};
