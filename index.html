@@ -35,14 +35,14 @@
 		});
 		
 		function quickescape() {
-			window.history.replaceState( {} , 'page 2', 'https://www.weather.com');
+			//window.history.replaceState( {} , 'page 2', 'https://www.weather.com');
 			location.replace("https://www.weather.com");
 			return false; /* prevents href from triggering */
 		}
 		
 		document.onkeydown = function(event) { // when any key is pressed
 			if (event.keyCode == 27) { // if that key is ESC (unicode for ESC is 27)
-				window.history.replaceState( {} , 'page 2', 'https://www.weather.com');
+				//window.history.replaceState( {} , 'page 2', 'https://www.weather.com');
 				location.replace("https://www.weather.com");
 			}
 		};
