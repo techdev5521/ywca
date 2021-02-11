@@ -1,3 +1,4 @@
 # Young Women's Christian Association Wesbite Redsign
+Rebranding of Young Women's Christian Association Website of Greater Lafayette
 
-This is a repository for the Young Women's Christian Association's website rediesgn by the Purdue Polytechnic Human Centered Design and Development Experience Studio
+![Screenshot](screenshot.png)
